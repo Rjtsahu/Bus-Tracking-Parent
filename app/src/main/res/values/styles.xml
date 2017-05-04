@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="MyMaterialTheme" parent="AppTheme">
+
+    </style>
+
+    <style name="materialButton" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/btn_bg_color</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/btn_fg_color</item>
+        <item name="background">@drawable/button_ripple</item>
+    </style>
+
+    <style name="materialCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+    <!--dont use this theme as it causes inflation exception-->
+<style name="myTextViewMedium" parent="MyMaterialTheme">
+    <item name="android:textSize" >@dimen/dimen_16_dp</item>
+    <item name="android:paddingLeft">@dimen/dimen_8_dp</item>
+    <item name="android:paddingRight">@dimen/dimen_8_dp</item>
+    <item name="android:paddingTop">@dimen/dimen_2_dp</item>
+    <item name="android:paddingBottom">@dimen/dimen_2_dp</item>
+    <item name="android:textColor">#fff</item>
+    <item name="android:text">Sample Text</item>
+</style>
+</resources>

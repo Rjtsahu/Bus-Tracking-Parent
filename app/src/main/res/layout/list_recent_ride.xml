@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/dimen_8_dp"
+    android:padding="@dimen/dimen_4_dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="4dp"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/home_variant_icon_36dp"
+        android:contentDescription="Source journey place"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:id="@+id/imgStartPlace_list"
+        />
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/arrow_right_bold"/>
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/school_icon_black_36dp"
+        android:layout_gravity="center"
+        android:contentDescription="Destination journey place"
+        android:id="@+id/imgEndPlace_list"/>
+</LinearLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/txtDate_list"
+            android:padding="@dimen/dimen_4_dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/txt_color_yellow_dark"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/txtDistance_list"
+            android:padding="@dimen/dimen_4_dp"
+            android:gravity="right"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/txtDateFromTo_list"
+            android:padding= "@dimen/dimen_4_dp"
+            android:gravity="left"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/txtStatus_list"
+            android:padding="@dimen/dimen_4_dp"
+            android:gravity="right"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/txtGpsStart_list"
+            android:padding="@dimen/dimen_4_dp"
+            android:gravity="left"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/txtGpsEnd_list"
+            android:padding="@dimen/dimen_4_dp"
+            android:gravity="right"/>
+    </LinearLayout>
+</LinearLayout>
+</android.support.v7.widget.CardView>

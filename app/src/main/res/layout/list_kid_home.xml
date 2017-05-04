@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_8_dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    android:id="@+id/imgKid_list"
+    android:layout_alignParentStart="true"
+    android:layout_marginRight="@dimen/dimen_12dp"
+    android:padding="@dimen/dimen_8_dp"
+    android:src="@drawable/ic_account_circle_grey600_48dp"
+    app:border_width="4dp"
+    app:border_color="#ddd"
+    />
+
+    <TextView
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtKidName_list"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imgKid_list"
+        android:padding="@dimen/dimen_8_dp"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/txtKidSection_list"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:padding="@dimen/dimen_8_dp"
+    android:text="section"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtKidName_list"
+        android:layout_toEndOf="@id/imgKid_list"
+        android:padding="@dimen/dimen_8_dp"
+        android:orientation="horizontal"
+
+    >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="bus no"
+            android:id="@+id/txtBus_list"
+            android:gravity="left"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="status"
+            android:id="@+id/txtStatus_list"
+            android:gravity="right"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>
+</android.support.v7.widget.CardView>

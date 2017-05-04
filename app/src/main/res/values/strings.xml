@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">BTS Parent</string>
+    <!--string value for LoginActivity-->
+    <string name="login_activity_heading">Bus Tracking: Parent</string>
+    <string name="app_bar_title">Parent Login</string>
+    <string name="edittext_login_hint">Email</string>
+    <string name="edittext_password_hint">Password</string>
+    <string name="btn_sign_in">Login</string>
+    <string name="txt_project_by">Ujjain Engineering College</string>
+    <string name="parent_home">Parent Home</string>
+
+    <!--string for drawer-->
+
+    <string name="menu_item_1">Home</string>
+    <string name="menu_item_2">Active Rides</string>
+    <string name="menu_item_3">Recent Rides</string>
+    <string name="menu_item_4">Feedback</string>
+    <string name="menu_item_5">Setting</string>
+    <string name="menu_item_6">About</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="parent_home_appbar">Parent Home</string>
+    <string name="my_kids">My Kids</string>
+    <string name="feedback">Send Feedback/Suggestion</string>
+    <string name="send">Send</string>
+    <string name="title">Title</string>
+    <string name="detail">Details</string>
+    <string name="no_bus">No bus arriving.</string>
+<string name="sample">Sample</string>
+    <!--some kid info-->
+</resources>

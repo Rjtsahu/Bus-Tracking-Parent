@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00695c</color>
+    <color name="colorPrimaryDark">#004d40</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#ffffff</color>
+    <color name="navigationBarColor">#00acc1</color>
+    <color name="colorAccent">#26a69a</color>
+    <color name="primaryLineColor">#c5cae9</color>
+    <color name="back_yellow_material">#fff176</color>
+    <color name="btn_bg_color">@color/colorPrimary</color>
+    <color name="btn_fg_color">@color/textColorPrimary</color>
+    <color name="txt_color_green">#28a928</color>
+    <color name="txt_color_yellow">#ffea00</color>
+    <color name="txt_color_yellow_dark">#827717</color>
+    <color name="txt_color_teal_darker">#004d40</color>
+    <color name="panel_list_bg_color_1">#d6e7dede</color>
+    <color name="panel_list_bg_color_2">#f8bbd0</color>
+    <color name="color_black">#000</color>
+</resources>

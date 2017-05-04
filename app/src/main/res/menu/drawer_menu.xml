@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+<item
+    android:id="@+id/menuHome"
+    android:title="@string/menu_item_1"
+    android:icon="@drawable/ic_home"
+    android:checked="false"
+    />
+    <item
+        android:id="@+id/menuActiveRide"
+        android:title="@string/menu_item_2"
+        android:icon="@drawable/ic_flight_takeoff_black_24dp"
+        android:checked="false"
+        />
+    <item
+        android:id="@+id/menuRecentRide"
+        android:title="@string/menu_item_3"
+        android:icon="@drawable/ic_archive_black_24dp"
+        android:checked="false"
+        />
+    <item
+        android:id="@+id/menuFeedback"
+        android:title="@string/menu_item_4"
+        android:icon="@drawable/ic_feedback_black_24dp"
+        android:checked="false"
+        />
+    <item
+        android:id="@+id/menuSetting"
+        android:title="@string/menu_item_5"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:checked="false"
+        />
+    <item
+        android:id="@+id/menuAbout"
+        android:title="@string/menu_item_6"
+        android:icon="@drawable/ic_description_black_24dp"
+        android:checked="false"
+        />
+    </group>
+</menu>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relativeLay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/btn_login_margin_top"
+        android:background="#67cec4"
+        android:paddingBottom="@dimen/dimen_8_dp">
+
+        <LinearLayout
+            android:id="@+id/linearLay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgParentAvatar"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_account_circle_white_48dp"
+                android:contentDescription="@string/app_bar_title"/>
+
+            <TextView
+                android:id="@+id/txtParentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtParentPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dimen_24_dp"
+            android:layout_toRightOf="@id/linearLay1"
+            android:gravity="right"
+            android:textSize="12sp"
+             />
+
+        <TextView
+            android:id="@+id/txtParentEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/dimen_24_dp"
+            android:layout_toLeftOf="@id/linearLay1"
+            android:textSize="12sp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLay1"
+        android:layout_marginTop="@dimen/dimen_24_dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/back_yellow_material"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dimen_8_dp"
+            android:text="My Kids count()"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listKids_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/general_layout_padding_all">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</RelativeLayout>

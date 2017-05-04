@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_16_dp"
+    android:background="@color/colorPrimary"
+    android:text="@string/feedback"
+    android:textColor="#fff"
+    android:gravity="center_horizontal"
+    style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_24_dp"
+        android:padding="@dimen/dimen_8_dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16_dp">
+
+            <EditText
+                android:id="@+id/feed_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title"
+                android:maxLines="1" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16_dp"
+            >
+
+            <EditText
+                android:id="@+id/feed_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/detail"
+                android:lines="5"
+                android:minLines="4"
+                android:inputType="textLongMessage|textMultiLine"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_16_dp"
+            android:text="@string/send"
+            android:theme="@style/materialButton"
+            android:id="@+id/btn_feedback"
+            />
+
+    </LinearLayout>
+</LinearLayout>

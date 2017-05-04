@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cord_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sahurjt.btsparent.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:title="@string/app_bar_title"/>
+
+        </android.support.design.widget.AppBarLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="?attr/actionBarSize"
+    android:id="@+id/lay_spacer"
+    android:layout_alignParentStart="true">
+
+</FrameLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lay_spacer"
+            android:layout_marginBottom="@dimen/card_margin_all"
+            android:layout_marginLeft="@dimen/card_margin_all"
+            android:layout_marginRight="@dimen/card_margin_all"
+            android:layout_marginTop="@dimen/dimen_24_dp"
+            android:orientation="vertical"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            android:layout_centerInParent="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/general_layout_padding_all"
+                android:text="@string/login_activity_heading"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="22sp"
+                android:background="@color/colorAccent"
+                android:layout_marginBottom="@dimen/dimen_12dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/general_layout_padding_left">
+
+                <EditText
+                    android:id="@+id/login_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/edittext_login_hint"
+                    android:maxLines="1" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/general_layout_padding_left">
+
+                <EditText
+                    android:id="@+id/login_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/edittext_password_hint"
+                    android:inputType="textPassword"
+                    android:maxLines="1" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/btn_login_margin_top"
+                android:layout_marginBottom="@dimen/btn_login_margin_bottom"
+               android:src="@drawable/ic_send"
+                app:fabSize="normal"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/progress_login"
+                android:layout_marginTop="@dimen/btn_login_margin_top"
+                android:layout_marginBottom="@dimen/btn_login_margin_bottom"
+                />
+</LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/general_layout_padding_all"
+            android:text="@string/txt_project_by"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
