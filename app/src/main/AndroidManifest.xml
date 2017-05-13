@@ -34,9 +34,10 @@
         </activity>
         <activity android:name=".HomeActivity"></activity>
         <activity android:name=".MapActivity"></activity>
-
+    
+        <!--add your maps api key here-->
         <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAvTeQ9AHF2g02Ap4w0g4RnPfJAyD0Z_3o"
+            android:value="api-key"
             />
 
         <meta-data android:name="com.google.android.gms.version"
