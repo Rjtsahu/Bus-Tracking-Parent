@@ -13,4 +13,10 @@ Parent Android app for School Bus Tracking System Project.
 <li>Add Home Gps</li>
 </ul>
 <br/>
-<b>ScreenShot adding soon.</b>
+<b>ScreenShot.</b>
+<div>
+ <img src="https://github.com/Rjtsahu/Bus-Tracking-Parent/blob/master/shot_parent_1.png" style="width:450;height:560;margin-left:40px;"/>
+ </div>
+ <div>
+ <img src="https://github.com/Rjtsahu/Bus-Tracking-Parent/blob/master/shot_parent_2.png" style="width:450;height:560;margin-left:40px;"/>
+ </div>
